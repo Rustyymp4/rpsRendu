@@ -1,0 +1,29 @@
+DEBUT
+# Admet une fonction random qui retourne un int aleatoire entre 0 et 2
+# Admet input une fonction qui recupere l'entree d'un joueur lors de son execution
+# Definit une fonction transfoRPS qui definit dans randomChoix 0 en tant que pierre
+    # Et 1 en tant que Feuille
+    # Et 2 en tant que Ciseaux
+# Definit une fonction playRPS qui lance la partie de pierre feuille ciseaux avec comme argument un entier qui determinera le nombre de rounds necessaires pour gagner
+    # Assigne a randomChoix le retour de l'execution de la fonction random 
+    # Assigne a choixJoueur le retour de l'execution de la fonction input 
+    # Initialize roundLost a 0
+    # Initialize roundWon a 0
+        # Si choixJoueur est incorrect, c'est a dire autre que "Pierre" "Feuille" ou "Ciseaux", alors on relance l'input
+    # On compare choixJoueur au randomChoix de l'ordinateur
+        # Si choixJoueur est Pierre et le randomChoix est Feuille
+        # Ou choixJoueur est Ciseaux et le randomChoix est Pierre
+        # Ou choixJoueur est Feuille et le randomChoix est Ciseaux
+            # Alors retourner "RIP BOZO T'AS PERDU EZ NOOB, REESSAYE"
+            # Incrementer roundLost de 1
+        # Si choixJoueur est Ciseaux et le randomChoix est Feuille
+        # Ou choixJoueur est Pierre et le randomChoix est Ciseaux
+        # Ou choixJoueur est Feuille et le randomChoix est Pierre
+            # Alors retourner "WAAA TA GANGER!!! ENCORE UN ROUND!!"
+            # Incrementer roundWon de 1
+        # Sinon retourner "Egalité, rejoue"
+        # Tant que l'entier de nombre de rounds n'est pas egal a roundLost, alors rejouer un round 
+            #Sinon renvoyer "Tu as perdu, rip bozo, mais tu as quand meme gagné" roundWon "rounds"
+        # Tant que l'entier de nombre de rounds dans playRPS() n'est pas egal a roundWon, alors rejouer un round 
+            #Sinon renvoyer "GG! Tu as perdu" roundLost "rounds, mais tu t'en sort giga bien"        
+FIN
